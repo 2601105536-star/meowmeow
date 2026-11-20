@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Contacts|MeowCafe</title>
+        <link rel="stylesheet" href="style.css">
+        <a class="logo" href="index.html">MeowCafe<img src="logo.png"></a>
+    </head>
+    <body id="top">
+<main class="wrap" style="margin-left:24px">
+    <div class="pagehead">
+        <a class="back" href="index.html" aria-label="Back">&larr;</a>
+        <h1>Contacts</h1>
+        <img src="logo.png">
+    </div>
+    <div class="contact-box">
+        <h2>Contact us:</h2>
+        <div class="info">
+            <div>
+                <p>Contact persons:</p>
+                <ul>
+                    <li>Rhondie Dela Peña</li>
+                    <li>Julius Gallamaso</li>
+                    <li>Ghudz Frey Lugo</li>
+                    <li>Wonsovein Nows</li>
+                    <li>Melanie Orquia</li>
+                </ul>
+            </div>
+            <div>
+                <p>Contact numbers:</p>
+                <p>0955 0698187</p>
+                <p>0997 8216819</p>
+                <p><br>FB Page: @MeowCafe</p>
+                </div>
+            </div>
+            <div class="fb">
+                <label for="msg">Send Feedback:</label>
+                <textarea id="msg"></textarea>
+                <button class="btn" id="send" type="button">Send</button>
+                <small id="note" role="status"></small>
+            </div>
+        </div>
+        <div class="copy">&copy; Avril M. Alvizo. Eloiza Grace O. Sereño. Bukidnon State University. 2026.</div>
+    </main>
+    <a class="btn donate-fixed" href="donate.html">Donate Neow</a>
+    <a class="totop fixed" href="#top">
+        <b>&uarr;</b>Back to top</a>
+<script>
+document.getElementById('send').onclick=function(){var m=document.getElementById('msg').value.trim(),n=document.getElementById('note');
+if(!m){n.textContent='Please write a message first.';return}
+location.href='mailto:2601105536@student.buksu.edu.ph?subject='+encodeURIComponent('MeowCafe Feedback')+'&body='+encodeURIComponent(m);
+n.textContent='Opening your email app to send your message...'};
+</script>
+</body>
+</html>
